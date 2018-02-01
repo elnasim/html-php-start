@@ -1,0 +1,48 @@
+@import "mixins/FontFace"
+@import "fonts"
+@import "media-queries"
+
+$color-red:               rgba(#FF0000, 1)
+$color-light-red:         rgba(#ffd7d7, 1)
+
+$color-blue:              rgba(#0000FF, 1)
+$color-light-blue:        rgba(#c5c7ff, 1)
+
+$color-green:             rgba(#008000, 1)
+$color-light-green:       rgba(#5e8060, 1)
+
+*
+  font-family: 'Open Sans'
+  font-size: 16px
+  font-weight: 300
+  font-style: normal
+
+body
+  position: relative
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 600
+
+span
+  &.h1, &.h2, &.h3, &.h4, &.h5, &.h6
+    font-weight: 600
+  &.h1
+    font-size: 36px
+  &.h2
+    font-size: 30px
+  &.h3
+    font-size: 24px
+  &.h4
+    font-size: 18px
+  &.h5
+    font-size: 14px
+  &.h6
+    font-size: 12px
+
+label
+  font-weight: 600
+
+sup.required
+  color: $color-red
+
+@import "forms"
